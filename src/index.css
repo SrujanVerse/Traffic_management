@@ -1,0 +1,38 @@
+/* ============================================================
+   index.css – Global baseline styles
+   All component-specific styles live inside component files
+   or inline Tailwind-style classes are avoided on purpose to
+   keep bundle lean.  We use only what Three.js / R3F needs.
+   ============================================================ */
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #050b14;       /* deep navy – control-room background */
+  color: #e2e8f0;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3 { font-weight: 600; letter-spacing: 0.02em; }
+p { color: #94a3b8; }
+
+/* ---- Scrollbar (for panels) ---- */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 2px; }
+
+/* ---- Utility ---- */
+.mono { font-family: 'Courier New', monospace; font-size: 11px; }
+.label-dim { color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+.value-bright { color: #e2e8f0; font-size: 14px; font-weight: 500; }

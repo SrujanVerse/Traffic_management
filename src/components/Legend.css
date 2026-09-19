@@ -1,0 +1,76 @@
+/* ============================================================
+   Legend.css
+   ============================================================ */
+
+.legend {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  background: rgba(10, 22, 40, 0.88);
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  padding: 12px 14px;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  min-width: 140px;
+}
+
+.legend-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.legend-items {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 3px 4px;
+  transition: background 0.15s;
+}
+
+.legend-item:hover {
+  background: rgba(255,255,255,0.04);
+}
+
+.legend-swatch {
+  width: 20px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.legend-label {
+  font-size: 11px;
+  color: #94a3b8;
+  letter-spacing: 0.03em;
+}
+
+/* Road type section */
+.legend-section-divider {
+  height: 1px;
+  background: #1e3a5f;
+  margin: 8px 0;
+}
+
+.legend-type-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-type-line {
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+}

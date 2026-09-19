@@ -1,0 +1,26 @@
+/* App.css – application-level layout tokens */
+
+/* Layout grid */
+.app-root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: #050b14;
+  overflow: hidden;
+}
+
+/* Full-height content area below the top bar */
+.app-content {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* critical: allows flex children to shrink below content size */
+  position: relative;
+}
+
+/* The 3D canvas occupies all remaining width */
+.network-container {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+}
