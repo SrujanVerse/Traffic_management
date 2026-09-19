@@ -37,7 +37,7 @@ export default function DetailsPanel({ item, onClose }) {
             <div className="rdp-section-title">Connected Segments ({data.segments.length})</div>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '12px' }}>
               {data.segments.map(seg => (
-                <li key={seg.segment_id} style={{ marginBottom: '4px', background: '#f1f5f9', padding: '4px', borderRadius: '4px' }}>
+                <li key={seg.segment_id} style={{ marginBottom: '4px', background: '#f1f5f9', color: '#1e293b', padding: '4px', borderRadius: '4px' }}>
                   {seg.segment_id} : {seg.source_node} → {seg.target_node}
                 </li>
               ))}
